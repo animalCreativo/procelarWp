@@ -1,8 +1,8 @@
 body {
-  background: orange; }
+  background: white; }
 
 header {
-  background: white;
+  background: #FF336B;
   height: 120px;
   width: auto;
   padding-top: 20px; }
@@ -17,16 +17,30 @@ li#rata {
   text-align: center;
   padding-top: 20px; }
 
+#imageCard {
+  padding-left: 20px; }
+
+#textoCard2 {
+  color: #767E8B; }
+
+#textoCard2:before {
+  font-weight: bold;
+  color: #FF336B;
+  content: "Procelar"; }
+
+#card2Div, #article1 {
+  background: #F8F8F8; }
+
 div#example-menu {
   height: 100%;
-  background: white; }
+  background: #FF336B; }
 
 div#example-menu {
   padding: 0px;
   position-top: -16px; }
 
 .top-bar, .top-bar ul {
-  background: white; }
+  background: #FF336B; }
 
 .top-bar .menu > li:not(.menu-text) > a {
   padding: 1rem;
@@ -59,11 +73,11 @@ div#example-menu {
   background: transparent; }
 
 .footer, .footer-container {
-  background: #0E3E71;
+  background: #FF336B;
   padding: 10px; }
 
 .row.footer-container {
-  background: #0E3E71; }
+  background: #FF336B; }
 
 .footerSocial {
   padding-top: 20px; }
@@ -104,14 +118,14 @@ a::after {
   font-weight: bold; }
 
 .card-section {
-  background: #F7F7F7;
+  background: transparent;
   padding: 10px 20px 10px 20px; }
 
 .card-section p {
-  color: #777777; }
+  color: #767E8B; }
 
 .card-section h5 {
-  color: #2691FB;
+  color: #FF336B;
   text-transform: uppercase; }
 
 .small-12.medium-6.columns.card2-section {
@@ -134,16 +148,16 @@ button.hollow.button {
   padding: 0px; }
 
 .card2-section {
-  background: #0E3E71; }
+  background: #F8F8F8; }
 
 .header-container {
-  background: white; }
+  background: #FF336B; }
 
 .card2-section p {
-  color: white; }
+  color: #767E8B; }
 
 .card2-section h5 {
-  color: #2691FB;
+  color: #FF336B;
   text-transform: uppercase; }
 
 button.hollow.button.button2 {

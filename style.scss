@@ -1,13 +1,13 @@
-$body-background: orange;
+$body-background: white;
 $body-background404: #15210a;
 $h3-404: white;
 $p-404: white;
-$header-background: white;
-$footer-background: #0E3E71;
+$header-background: #FF336B;
+$footer-background: #FF336B;
 $footer-color: white;
-$card-background: #F7F7F7;
-$card-textcolor: #777777;
-$card-titulocolor: #2691FB;
+$card-background: transparent;
+$card-textcolor: #767E8B;
+$card-titulocolor: #FF336B;
 $card-bordercolor: transparent;
 $card-paddingheader: 10px;
 $card-paddingright: 20px;
@@ -15,9 +15,9 @@ $card-paddingbottom: 10px;
 $card-paddingleft: 20px;
 $btn-textcolor: #2691FB;
 $btn-bordercolor: #2691FB;
-$card2-background: #0E3E71;
-$card2-textcolor: white;
-$card2-titulocolor: #2691FB;
+$card2-background: #F8F8F8;
+$card2-textcolor: #767E8B;
+$card2-titulocolor: #FF336B;
 $btn2-textcolor: white;
 $btn2-bordercolor: #2691FB;
 $header-textcolor: #0E3E71;
@@ -54,6 +54,20 @@ li#rata {
     text-align: center;
     padding-top: 20px;
 
+}
+#imageCard {
+  padding-left: 20px;
+}
+#textoCard2 {
+  color: $card2-textcolor;
+}
+#textoCard2:before {
+  font-weight: bold;
+  color: $card2-titulocolor;
+  content: "Procelar";
+}
+#card2Div,#article1 {
+  background: $card2-background;
 }
 
 div#example-menu {
