@@ -39,19 +39,28 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-    <div data-sticky-container>
+      <div data-sticky-container>
       <div class="top-bar headermenu" data-sticky data-options="marginTop: 0" id="example-menu">
-        <div class="top-bar-left" style="padding-left: 80px;">
-          <ul class="menu">
-             <img src="assets/procelarLogo.svg">
-          </ul>
-        </div>
-        <div class="top-bar-right">
-          <ul class="menu" data-magellan>
-            <li><a href="#first">One</a></li>
-            <li><a href="#second">Two</a></li>
-            <li><a href="#third">Three</a></li>
-          </ul>
+        <div class="row">
+          <div class="columns small-5  large-3 " style="width: 250px;">
+            <ul class="menu">
+               <img src="assets/procelarLogo.svg">
+            </ul>
+          </div>
+          <div class="columns small-12 medium-9 show-for-medium">
+            <ul class="menu" data-magellan id="menuListHeader">
+              <li><a href="#first" >¿Cómo funciona?</a></li>
+              <li><a href="#second">Modo de uso</a></li>
+              <li><a href="#third" >Dónde encontrarnos</a></li>
+            </ul>
+          </div>
+          <div class="columns small-12 medium-9 show-for-small-only" >
+            <ul class="menu" data-magellan id="menuListHeader">
+              <li><a href="#first" style="text-align: left;">¿Cómo<br>funciona?</a></li>
+              <li><a href="#second" style="text-align: left;">Modo<br>de uso</a></li>
+              <li><a href="#third" style="text-align: left;">Dónde<br>encontrarnos</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -184,13 +193,13 @@
                     <nav class="menu-footer-container">
                         <ul id="menu-footer" class="menu footermenu">
                             <li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175">
-                                <a href="#">Quienes somos</a>
+                                <a href="#">¿Cómo funciona?</a>
                             </li>
                             <li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98">
-                                <a href="#">Contacto</a>
+                                <a href="#">Modo de uso</a>
                             </li>
                             <li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97">
-                                <a href="#">pagina final</a>
+                                <a href="#">Dónde encontrarnos</a>
                             </li>
                         </ul>
                     </nav>
@@ -217,10 +226,10 @@
             </div>
             <div class="columns small-12 show-for-small-only" id="menuFooterMobile">
                 <ul id="menu-footer-1" class="menu footermenu vertical menu">
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a href="#">Quienes somos</a>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a href="#">¿Cómo funciona?</a>
                     </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="#">Contacto</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="#">pagina final</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="#">Modo de uso</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="#">Dónde encontrarnos</a></li>
                 </ul> 
             </div>
             <div class="columns small-12 footermenu show-for-small-only">
