@@ -34,6 +34,7 @@ $orbit-bulletcoloractive: #3893FF;
 
 body {
   background: $body-background;
+  font-family: 'Open Sans', sans-serif;
 }
 header{
   background: $header-background;
@@ -67,7 +68,12 @@ li#rata {
   content: "Procelar";
 }
 #card2Div,#article1 {
-  background: $card2-background;
+
+  background: rgb(248,248,248); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(248,248,248,1) -1%, rgba(248,248,248,1) 0%, rgba(248,248,248,1) 80%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(248,248,248,1) -1%,rgba(248,248,248,1) 0%,rgba(248,248,248,1) 80%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(248,248,248,1) -1%,rgba(248,248,248,1) 0%,rgba(248,248,248,1) 80%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 div#example-menu {
@@ -86,6 +92,7 @@ div#example-menu {
     color: $header-textcolor;
     font-weight: normal;
 
+
 }
 .top-bar .menu li:not(:last-child) {
     border-right: 0px solid #4e4e4e;
@@ -103,7 +110,9 @@ div#example-menu {
 
 .headermenu a, .headermenu p {
   color: $header-textcolor;
-  font-weight: bold;
+  font-family:  Open+Sans;
+  font-weight: 400; 
+  font-size: 15px  ;
 
 }
 div#example-menu {
@@ -181,11 +190,17 @@ a::after {
 
 .card-section p {
   color: $card-textcolor;
+  font-family:  Open+Sans;
+  font-weight: 400; 
+  font-size: 16px  ;
 }
 
 .card-section h5 {
   color: $card-titulocolor;
-  text-transform: uppercase;
+  font-family:  Open+Sans;
+  font-weight: 300; 
+  font-size: 24px  ;
+
 }
 
 .small-12.medium-6.columns.card2-section {
@@ -218,11 +233,23 @@ button.hollow.button {
 }
 .card2-section p {
   color: $card2-textcolor;
+  font-family:  Open+Sans;
+  font-weight: 400; 
+  font-size: 24px  ;
 }
 
 .card2-section h5 {
   color: $card2-titulocolor;
   text-transform: uppercase;
+  font-family:  Open+Sans;
+  font-weight: 300; 
+  font-size: 32px  ;
+}
+.textSpecial{
+  color: $card2-titulocolor;
+  font-family:  Open+Sans;
+  font-weight: 300; 
+  font-size: 32px  ;
 }
 button.hollow.button.button2 {
   color:$btn2-textcolor;
@@ -263,7 +290,13 @@ ul.menu.headermenu {
   background: $body-background404;
 }
 
+.niko{
+  padding-top: 80px;
+}
 
+.profix {
+  padding-top: 100px;
+}
 
 //Medias Queris
 
@@ -294,17 +327,30 @@ ul.menu.headermenu {
   #menuFooterMobile {
     padding: 0px;
   }
+  .niko{
+    padding-top: 10px;
+  }
+
+
 }
 
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
-
+.profix {
+  padding-top: 50px;
+}
    #imgHeader img {
     width: 150px;
     padding-top: 10px;
   }
-
+ 
+  .card2-section p {
+    font-size:  18;
+  }
+  .card2-section h5  {
+    font-size:  28;
+  }
 }
 
 /* Medium only */
@@ -314,13 +360,23 @@ ul.menu.headermenu {
   font-size: 12px;
   }
 
-  #imgOrbit{
-    content: src()
+  
+  .card2-section p {
+    font-size:  18;
+  }
+  .card2-section h5  {
+    font-size:  28;
   }
 }
 
 /* Large and up */
-@media screen and (min-width: 64em) {}
+@media screen and (min-width: 64em) {
+
+.profix {
+  padding-top: 100px;
+}
+  
+}
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
