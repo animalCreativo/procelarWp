@@ -35,6 +35,8 @@ $orbit-bulletcoloractive: #3893FF;
 body {
   background: $body-background;
   font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 header{
   background: $header-background;
@@ -44,7 +46,14 @@ header{
 }
 
 li#rata {
-    text-align: center;
+  text-align: center;
+}
+
+.menu-icon::after , .menu-icon:hover::after{
+    background: white;
+    top: 0;
+    left: 0;
+    box-shadow: 0 7px 0 white, 0 14px 0 white;
 }
 
 .row.container {
@@ -56,6 +65,8 @@ li#rata {
     padding-top: 20px;
 
 }
+
+
 #imageCard {
   padding-left: 20px;
 }
@@ -63,7 +74,8 @@ li#rata {
   color: $card2-textcolor;
 }
 #textoCard2:before {
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   color: $card2-titulocolor;
   content: "Procelar";
 }
@@ -90,9 +102,8 @@ div#example-menu {
 .top-bar .menu > li:not(.menu-text) > a {
     padding: 1rem;
     color: $header-textcolor;
-    font-weight: normal;
-
-
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
 }
 .top-bar .menu li:not(:last-child) {
     border-right: 0px solid #4e4e4e;
@@ -110,7 +121,7 @@ div#example-menu {
 
 .headermenu a, .headermenu p {
   color: $header-textcolor;
-  font-family:  Open+Sans;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400; 
   font-size: 15px  ;
 
@@ -121,6 +132,7 @@ div#example-menu {
 .headermenu {
   width: 100%;
   height: 120px;
+  padding-top: 20px;
 }
 
 .row.title-bar {
@@ -180,7 +192,7 @@ a::after {
 
 .headermenu a, .headermenu p {
   color: $header-textcolor;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .card-section {
@@ -190,14 +202,14 @@ a::after {
 
 .card-section p {
   color: $card-textcolor;
-  font-family:  Open+Sans;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400; 
   font-size: 16px  ;
 }
 
 .card-section h5 {
   color: $card-titulocolor;
-  font-family:  Open+Sans;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300; 
   font-size: 24px  ;
 
@@ -233,7 +245,7 @@ button.hollow.button {
 }
 .card2-section p {
   color: $card2-textcolor;
-  font-family:  Open+Sans;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400; 
   font-size: 24px  ;
 }
@@ -241,13 +253,13 @@ button.hollow.button {
 .card2-section h5 {
   color: $card2-titulocolor;
   text-transform: uppercase;
-  font-family:  Open+Sans;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300; 
   font-size: 32px  ;
 }
 .textSpecial{
   color: $card2-titulocolor;
-  font-family:  Open+Sans;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300; 
   font-size: 32px  ;
 }
@@ -272,14 +284,14 @@ ul.menu.headermenu {
 #error-404Title p  {
   color: $h3-404;
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 #error-404 p {
   color: $p-404;
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 .img-circle {
@@ -307,10 +319,20 @@ ul.menu.headermenu {
    text-align: right;
    margin-top: 10px;
   }
+  #videoFrame {
+    width: 320px;
+    height: 180px;
+  }
+  #rowMobile{
+  margin-right: 0px;
+  margin-left: 0px;
+  }
 }
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-
+  #menuListHeader a {
+    font-size: 12px;
+  }
   hr{
     margin-left: 0px;
   }
@@ -331,15 +353,39 @@ ul.menu.headermenu {
     padding-top: 10px;
   }
 
+  #videoFrame {
+    width: 320px;
+    height: 180px;
+  }
+  .headermenu {
+  width: 100%;
+  min-height: 80px;
+  padding-top: 0px;
+  }
+
+  #rowMobile{
+  margin-right: 0px;
+  margin-left: 0px;
+  }
+
+  .title-bar {
+    width: 100vw;
+    padding-right: 20px;
+    /* background-color: white; */
+}
+
+.top-bar.headermenu.sticky {
+    height: auto;
+}
 
 }
 
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
-.profix {
-  padding-top: 50px;
-}
+  .profix {
+    padding-top: 50px;
+  }
    #imgHeader img {
     width: 150px;
     padding-top: 10px;
@@ -360,23 +406,22 @@ ul.menu.headermenu {
   font-size: 12px;
   }
 
-  
   .card2-section p {
     font-size:  18;
   }
   .card2-section h5  {
     font-size:  28;
   }
+
+  #imgHeader img {
+    width: 150px;
+    padding-top: 10px;
+  }
+
 }
 
 /* Large and up */
-@media screen and (min-width: 64em) {
-
-.profix {
-  padding-top: 100px;
-}
-  
-}
+@media screen and (min-width: 64em) {}
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {}

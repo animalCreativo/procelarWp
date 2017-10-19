@@ -8,6 +8,25 @@ $(document).ready(function (){
 			//imgObit.addClass('orbit-image') ; 
 			 imgObit.css('height', 'auto') ; 
 		}*/
+        
+    $('body').bind('touchmove', function(e) { 
+        console.log($(this).scrollTop()); // Replace this with your code.
+
+        if ($('#example-menu').is(":visible") )
+        {
+          $('#example-menu').hide();
+        }
+
+    });
+
+    $('.clickMenu').click(function(){ 
+        //alert('Sign new href executed.');
+        if ($('#example-menu').is(":visible") )
+        {
+          $('#example-menu').hide();
+
+        }
+    });
 
 
 });
