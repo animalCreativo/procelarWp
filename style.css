@@ -318,7 +318,11 @@ ul.menu.headermenu {
 
   #imgHeader img {
     width: 150px;
-    padding-top: 10px; } }
+    padding-top: 10px; }
+
+  iframe#videoFrame {
+    width: 480px;
+    height: 270px; } }
 /* Large and up */
 /* Large only */
 
