@@ -31,8 +31,10 @@
 
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <title>Procelar</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Procelar es un tratamiento en gel que fortalece las pestañas, ayudando a que el folículo piloso mejore el anclaje del pelo. al estimular el colágeno y las proteínas que se encuentran en la matriz celular..">
+    <meta name="keywords" content="Folículo piloso, fortalecer pestañas, pestañas largas, pestañas fuertes, tratamiento crecimiento de pestañas, colágeno para pelo, proteínas para pelo">
+    <title>Procelar - Tratamiento en gel que fortalece las pestañas desde la raíz.</title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory')?>/css/foundation-flex.css">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory')?>/style.css">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory')?>/icons/foundation-icons.css">
@@ -102,7 +104,7 @@
 
     
     <div>
-       <img class="imgOrbit" style="width: 100%; height:auto;" data-interchange="[<?php bloginfo('stylesheet_directory')?>/assets/Mobile@2x.png, small], [<?php bloginfo('stylesheet_directory')?>/assets/Tablet.png, medium], [<?php bloginfo('stylesheet_directory')?>/assets/Desktop.png, large]]">  
+       <img class="imgOrbit" style="width: 100%; height:auto;" data-interchange="[<?php bloginfo('stylesheet_directory')?>/assets/Mobile@2x.png, small], [<?php bloginfo('stylesheet_directory')?>/assets/Tablet.png, medium], [<?php bloginfo('stylesheet_directory')?>/assets/Desktop.png, large]]" alt="Procelar - Tratamiento en gel que fortalece las pestañas desde la raíz.">  
     </div> 
 
     <div class="sections">
