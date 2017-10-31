@@ -178,7 +178,7 @@
       
       <section">
         <div>
-          <img class="imgOrbit" style="width: 100%; height:auto;" data-interchange="[<?php bloginfo('stylesheet_directory')?>/assets/puntosVentasMobile@2x.jpg, small], [<?php bloginfo('stylesheet_directory')?>/assets/puntosVentasTablet.jpg, medium], [<?php bloginfo('stylesheet_directory')?>/assets/puntosVentas.jpg, large]], [<?php bloginfo('stylesheet_directory')?>/assets/puntosVentasHD.jpg, retina]]">  
+          <img class="imgOrbit" style="width: 100%; height:auto;" data-interchange="[<?php bloginfo('stylesheet_directory')?>/assets/puntosVentasMobile@2x.jpg, small], [<?php bloginfo('stylesheet_directory')?>/assets/puntosVentasTablet.jpg, medium], [<?php bloginfo('stylesheet_directory')?>/assets/puntosVentas.jpg, large]]]">  
        </div> 
         
       </section>
@@ -190,9 +190,9 @@
               <h5 class="textSpecial" style="padding-top: 100px; padding-bottom: 10px;">¿Cómo funciona Procelar?</h5>
             </div>  
 
-            <div class="columns small-12">
+            <div id ="columnaVideo" class="columns small-12">
               <div class="responsive-embed">
-                   <div class="columns small-12 text-center" >
+                   <div id ="columnaVideo" class="columns small-12 text-center" >
                       <iframe id ="videoFrame" width="960" height="540" src="<?php bloginfo('stylesheet_directory')?>/assets/video.mp4" frameborder="0" allowfullscreen></iframe>
                   </div> 
               </div> 
